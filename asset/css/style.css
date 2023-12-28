@@ -1,0 +1,91 @@
+:root{
+    --bg:white;
+    --text:black;
+    --secBg:green;
+    --treBg:rgb(255, 217, 0);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    scroll-behavior: smooth !important;
+}
+
+.navbar-brand{
+   margin-bottom: 15px !important;
+}
+.nav-item{
+  list-style: none;
+  gap: 10px;
+  font-size: 20px;
+}
+.nav-hero{
+    height: 50px !important;
+    background-color: black !important;
+}
+.card-carausel{
+    background-color: rgba(240, 248, 255, 0.453) !important;
+}
+.row-card {
+    display: none !important;
+}
+.garis{
+    position: relative;
+    
+}
+.garis::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 18px;
+    width: 100px;
+    bottom: -5px; /* Sesuaikan dengan jarak garis dari teks */
+    height: 6px; /* Sesuaikan ketebalan garis */
+    background-color: rgb(255, 251, 0); /* Sesuaikan warna garis */
+}
+.tentang{
+    background-color: black;
+    padding: 40px 0 !important;
+}
+.font-tentang{
+    font-size: 25px !important;
+}
+.footer{
+    background-color: black !important;
+}
+.icons{
+    font-size: 50px;
+}
+.promo{
+    position: fixed !important;
+    bottom: 40px !important;
+    left: 0 !important;
+}
+
+
+/* media */
+@media (max-width:600px) {
+     .row-card{
+        margin: 0 !important;
+        display: block !important;
+     }
+     .font-tentang{
+        font-size: 15px !important;
+     }
+     .icons{
+        font-size: 40px !important;
+     }
+     .container-icons{
+        display: flex !important;
+        justify-content: center !important;
+        margin-bottom: 10px;
+     }
+     .text-icons{
+        text-align: center !important;
+     }
+     .top{
+       display: flex !important;
+       justify-content: right !important;
+     }
+}
